@@ -1,3 +1,5 @@
+[![Screenshot](screenshot_01.jpg)](https://youtu.be/oS0qmtgQaQs)
+
 # About this Repo / Status
 This project includes a fully playable first level and the beginnings of a rough second one.  
 Development is currently on hold while I focus on my new game project, *Knight Drift*.  
