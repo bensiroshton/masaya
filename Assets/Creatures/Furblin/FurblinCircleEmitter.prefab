@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9051171094529795609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5298457367973186449}
+  - component: {fileID: 5176498288429674633}
+  - component: {fileID: 2883101424138078378}
+  - component: {fileID: 4532807564368079835}
+  - component: {fileID: 6073538705088946212}
+  - component: {fileID: 6303678643344618107}
+  - component: {fileID: 8236555702858807592}
+  m_Layer: 11
+  m_Name: FurblinCircleEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5298457367973186449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051171094529795609}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.0804895, z: -0, w: 0.9967555}
+  m_LocalPosition: {x: 2.54, y: 0, z: -1.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -9.233, z: 0}
+--- !u!135 &5176498288429674633
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051171094529795609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2883101424138078378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051171094529795609}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04399c311071c9e47a0fbaf7e1da57fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mode: 0
+  _prefab: {fileID: 3077698199471540692, guid: 8d937b97069f8f54595439a7bf6f633d, type: 3}
+  _prefabs: {fileID: 0}
+  _references: []
+  _spawnPoint: {fileID: 0}
+  _interval:
+    a: 0
+    b: 0
+  _intervalRange:
+    a: 0
+    b: 0
+  _emitImmediatelyOnStart: 1
+  _maxEmissions: -1
+  _onObjectEmitted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8236555702858807592}
+        m_TargetAssemblyTypeName: Siroshton.Masaya.Entity.EntityDeathTracker, com.siroshton.masaya.runtime
+        m_MethodName: AddEntity
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _zone: {fileID: 6303678643344618107}
+  _startDirection: 3
+  _waveCount: 1
+  _timeBetweenWaves: 2
+--- !u!114 &4532807564368079835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051171094529795609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d833980d7731da246a73354fe3a28a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objects: []
+  _components:
+  - {fileID: 2883101424138078378}
+  _triggers: 1
+  _stateOnTriggerEnter: 1
+  _stateOnTriggerExit: 0
+--- !u!114 &6073538705088946212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051171094529795609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46b5285e7def04488e7e5c6d19251e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onPlayerDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  _onPlayerRevived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2883101424138078378}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2883101424138078378}
+        m_TargetAssemblyTypeName: Siroshton.Masaya.Environment.CircleZoneEmitter,
+          com.siroshton.masaya.runtime
+        m_MethodName: ResetEmitter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8236555702858807592}
+        m_TargetAssemblyTypeName: Siroshton.Masaya.Entity.EntityDeathTracker, com.siroshton.masaya.runtime
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6303678643344618107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051171094529795609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 435b719046090be42990743cec8be240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _surfaceMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _surface: {fileID: 0}
+  _radius: 2.91
+  _spacing: 1.62
+--- !u!114 &8236555702858807592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051171094529795609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3bf5f4a785fa84abb14116fdc41cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onAllEntitiesKilled:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: wakeUp
+          m_BoolArgument: 1
+        m_CallState: 2

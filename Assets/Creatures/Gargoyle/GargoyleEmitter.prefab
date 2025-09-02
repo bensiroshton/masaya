@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1462407547712021596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8441609191689076566}
+  - component: {fileID: 6615834058009640548}
+  - component: {fileID: 5262906503702587884}
+  - component: {fileID: 7283345452600368513}
+  - component: {fileID: 3130974784612150833}
+  - component: {fileID: 2686532368652936265}
+  m_Layer: 11
+  m_Name: GargoyleEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8441609191689076566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462407547712021596}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.17339164, z: -0, w: 0.984853}
+  m_LocalPosition: {x: -3.4, y: 0, z: 30.55}
+  m_LocalScale: {x: 20.695864, y: 20.695864, z: 20.695864}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -19.97, z: 0}
+--- !u!135 &6615834058009640548
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462407547712021596}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5262906503702587884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462407547712021596}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13cf34795d4140241989392efbabe547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mode: 1
+  _prefab: {fileID: 156890375800250622, guid: 122502be6399db640aacd28aed0b56a8, type: 3}
+  _prefabs: {fileID: 0}
+  _references: []
+  _spawnPoint: {fileID: 0}
+  _interval:
+    a: 5
+    b: 5
+  _intervalRange:
+    a: 5
+    b: 5
+  _emitImmediatelyOnStart: 1
+  _maxEmissions: -1
+  _onObjectEmitted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3130974784612150833}
+        m_TargetAssemblyTypeName: Siroshton.Masaya.Navigation.NavAgentController,
+          com.siroshton.masaya.runtime
+        m_MethodName: TargetPlayer
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _zone: {fileID: 0}
+  _startDirection: 0
+  _waveCount: 5
+  _timeBetweenWaves: 6
+--- !u!114 &7283345452600368513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462407547712021596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d833980d7731da246a73354fe3a28a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objects: []
+  _components:
+  - {fileID: 5262906503702587884}
+  _triggers: 1
+  _stateOnTriggerEnter: 1
+  _stateOnTriggerExit: 0
+--- !u!114 &3130974784612150833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462407547712021596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e833ceb59ac9d846a42f17279315c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2686532368652936265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462407547712021596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46b5285e7def04488e7e5c6d19251e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onPlayerDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  _onPlayerRevived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5262906503702587884}
+        m_TargetAssemblyTypeName: Siroshton.Masaya.Environment.Emitter, com.siroshton.masaya.runtime
+        m_MethodName: ResetEmitter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5262906503702587884}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

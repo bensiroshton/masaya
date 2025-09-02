@@ -1,0 +1,11 @@
+{
+  "name": "com.siroshton.masaya",
+  "displayName": "Masaya",
+  "version": "1.0.0",
+  "description": "Ben's Game Library",
+  "type": "library",
+  "hideInEditor": false,
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "2.0.0"
+  }
+}

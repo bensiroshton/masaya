@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6969575613985736740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019563342371978871}
+  - component: {fileID: 4658044350050950128}
+  - component: {fileID: 1986514523580123564}
+  - component: {fileID: 4823652148925030247}
+  - component: {fileID: 1124917918522229269}
+  - component: {fileID: 5491679351292490048}
+  m_Layer: 11
+  m_Name: FishLegCircleEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019563342371978871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969575613985736740}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.0804895, z: -0, w: 0.9967555}
+  m_LocalPosition: {x: -0.02, y: 0, z: 0.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -9.233, z: 0}
+--- !u!135 &4658044350050950128
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969575613985736740}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1986514523580123564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969575613985736740}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04399c311071c9e47a0fbaf7e1da57fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mode: 0
+  _prefab: {fileID: 3787466050527858429, guid: 099e426cf5119d94a80a7aab65c6aa8c, type: 3}
+  _prefabs: {fileID: 0}
+  _references: []
+  _spawnPoint: {fileID: 0}
+  _interval:
+    a: 0
+    b: 0
+  _intervalRange:
+    a: 0
+    b: 0
+  _emitImmediatelyOnStart: 1
+  _maxEmissions: -1
+  _onObjectEmitted:
+    m_PersistentCalls:
+      m_Calls: []
+  _zone: {fileID: 5491679351292490048}
+  _startDirection: 3
+  _waveCount: 1
+  _timeBetweenWaves: 2
+--- !u!114 &4823652148925030247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969575613985736740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d833980d7731da246a73354fe3a28a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objects: []
+  _components:
+  - {fileID: 1986514523580123564}
+  _triggers: 1
+  _stateOnTriggerEnter: 1
+  _stateOnTriggerExit: 0
+--- !u!114 &1124917918522229269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969575613985736740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46b5285e7def04488e7e5c6d19251e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onPlayerDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  _onPlayerRevived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1986514523580123564}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1986514523580123564}
+        m_TargetAssemblyTypeName: Siroshton.Masaya.Environment.CircleZoneEmitter,
+          com.siroshton.masaya.runtime
+        m_MethodName: ResetEmitter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5491679351292490048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969575613985736740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 435b719046090be42990743cec8be240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _surfaceMask:
+    serializedVersion: 2
+    m_Bits: 1
+  _surface: {fileID: 0}
+  _radius: 1.92
+  _spacing: 1.62

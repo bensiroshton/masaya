@@ -1,0 +1,353 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4305512215295533770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2788972438513632456}
+  - component: {fileID: 4938267198042937459}
+  - component: {fileID: 4916992555733542246}
+  - component: {fileID: 1355423664918327054}
+  - component: {fileID: -4764035323105461957}
+  - component: {fileID: 7737595752229933354}
+  - component: {fileID: 1100391241808744008}
+  - component: {fileID: 8774438069006203708}
+  - component: {fileID: 7648906077455222991}
+  - component: {fileID: 8973841488181604855}
+  m_Layer: 19
+  m_Name: Boulder-01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2788972438513632456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6458623, y: 0.677, z: -1.959507}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4938267198042937459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdb68b9f26495147b78317277f48d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isInvincible: 0
+  _allowHitMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _ignoreDamageMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _attributes:
+    _speed: 1
+    _maxHealth: 1
+    _damage: 1000
+  _attributeModifiers:
+    _speedModifier: 1
+    _damageModifier: 1
+    _fireRateModifier: 1
+    _bulletSpeedModifier: 1
+    _bulletRangeModifier: 1
+    _bulletSizeModifier: 1
+    _criticalChance: 0
+    _criticalDamageModifier: 1
+  _lifecycle:
+    experience: 0
+    releaseExperienceMethod: 0
+    destroyOnDeath: 1
+    onPlayerDeath: 1
+    killWhenBelowY: -10
+    moveToAreaOnDeath: 0
+    selfDamageWhenHit: 0
+    showDamageText: 0
+  _agent:
+    agent: {fileID: 0}
+    autoUpdateSpeed: 1
+    disableRotationsOnStart: 0
+  _itemDropEvent: 0
+  _itemDrops:
+    _chanceBonus: 0
+    _baseChanceBonus: 1
+    _itemCountModifier: 0
+    _attemptChanceDrops: 0
+    _useGroupGauranteeRules: 1
+    _dropRadius: 0.25
+    _sampleNavMesh: 1
+    _mightDropChance: 0
+    _mightDropCount:
+      a: 1
+      b: 1
+    _mightDrop: []
+    _alwaysDrop: []
+  _events:
+    onHit:
+      m_PersistentCalls:
+        m_Calls: []
+    onHealthChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    onKilled:
+      m_PersistentCalls:
+        m_Calls: []
+    onDestroyed:
+      m_PersistentCalls:
+        m_Calls: []
+    onNoFireZoneEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    onNoFireZoneExit:
+      m_PersistentCalls:
+        m_Calls: []
+    onWaterEnter:
+      m_PersistentCalls:
+        m_Calls: []
+    onWaterExit:
+      m_PersistentCalls:
+        m_Calls: []
+    onItemsDropped:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!33 &4916992555733542246
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Mesh: {fileID: 4199401309831131938, guid: d74ced2fee9e032409d078fc948202da, type: 3}
+--- !u!23 &1355423664918327054
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f7e2431592230944c84163966fe7c4b0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &-4764035323105461957
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.52636623
+  m_Center: {x: 0.0047320426, y: 0.0019553602, z: 0.037207156}
+--- !u!54 &7737595752229933354
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.1
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1100391241808744008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a232634d528b974a9ce22ea1497cc17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8774438069006203708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc4b42cc2239ad4eadb5f8106786579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
+  _onCollisionEnter:
+  - layer:
+      serializedVersion: 2
+      m_Bits: 1
+    clip: {fileID: 8300000, guid: 4f33ddb8ee5b53844af5278a65301232, type: 3}
+    audioCommand: 1
+    pitch:
+      range:
+        a: 1
+        b: 1
+      adjustFromSpeed: 0
+      maxSpeed: 0
+    volume:
+      range:
+        a: 0.7
+        b: 0.7
+      adjustFromSpeed: 0
+      maxSpeed: 0
+  - layer:
+      serializedVersion: 2
+      m_Bits: 1
+    clip: {fileID: 8300000, guid: 6851fb0a73cb74a49bbbfaa866fe9394, type: 3}
+    audioCommand: 0
+    pitch:
+      range:
+        a: 1
+        b: 1
+      adjustFromSpeed: 0
+      maxSpeed: 0
+    volume:
+      range:
+        a: 0.7
+        b: 0.7
+      adjustFromSpeed: 0
+      maxSpeed: 0
+  _onCollisionExit:
+  - layer:
+      serializedVersion: 2
+      m_Bits: 1
+    clip: {fileID: 8300000, guid: 4f33ddb8ee5b53844af5278a65301232, type: 3}
+    audioCommand: 2
+    pitch:
+      range:
+        a: 0
+        b: 0
+      adjustFromSpeed: 0
+      maxSpeed: 0
+    volume:
+      range:
+        a: 0
+        b: 0
+      adjustFromSpeed: 0
+      maxSpeed: 0
+  _onTriggerEnter: []
+  _onTriggerExit: []
+--- !u!114 &7648906077455222991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46b5285e7def04488e7e5c6d19251e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onPlayerDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  _onPlayerRevived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4938267198042937459}
+        m_TargetAssemblyTypeName: Siroshton.Masaya.Entity.Entity, com.siroshton.masaya.runtime
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!75 &8973841488181604855
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4305512215295533770}
+  m_Enabled: 0
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: -0.75}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}

@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OceanMaterial-Floor-01
+  m_Shader: {fileID: -6465566751694194690, guid: 42c0662322ee3d949b674882ccf50501,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 3
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2900
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMap:
+        m_Texture: {fileID: 2800000, guid: 0fbcffb3acb23ca438efc44b12a0c488, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionProbe:
+        m_Texture: {fileID: 8900000, guid: ddaf748303e6f2040adbe0e1200f2dae, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTexture:
+        m_Texture: {fileID: 8400000, guid: 3a8629762e2cc854293b829723a41938, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterParticles:
+        m_Texture: {fileID: 8400000, guid: a072ea77d2d54694d9d2c8e6ca15b3e1, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveStrengthMap:
+        m_Texture: {fileID: 2800000, guid: 49b0eb40cf510b647b7b9a34fd4fd08a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveTexture:
+        m_Texture: {fileID: 8400000, guid: a072ea77d2d54694d9d2c8e6ca15b3e1, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Depth: 0
+    - _DepthStrength: 0.23
+    - _FoamFrequency: 7000
+    - _FoamScale: 0
+    - _FoamSpeed: 0.0002
+    - _FoamStrength: 0.497
+    - _Metallic: 0.397
+    - _NoiseStrength: 0.594
+    - _QueueControl: 1
+    - _QueueOffset: 0
+    - _ReflectionBrighten: 2.82
+    - _ReflectionDisplacement: 0.02
+    - _ReflectionStrength: 0.8
+    - _Smoothness: 0.82
+    - _WaveSize: 2
+    - _WaveStrength: 2.5
+    m_Colors:
+    - _Color: {r: 0.23529413, g: 0.3372549, b: 0.3647059, a: 1}
+    - _DeepWaterColor: {r: 0.105882354, g: 0.38431373, b: 0.42745098, a: 1}
+    - _NoiseFrequency: {r: 500, g: 600, b: 0, a: 0}
+    - _NoiseSpeed: {r: -0.0005, g: 0.002, b: 0, a: 0}
+    - _NoiseSpeedY: {r: 0, g: 0, b: 0, a: 0}
+    - _ShallowWaterColor: {r: 0.2, g: 0.72156864, b: 0.8, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &6482125757304623176
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10

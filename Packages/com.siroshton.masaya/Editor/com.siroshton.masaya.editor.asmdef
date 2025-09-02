@@ -1,0 +1,21 @@
+{
+    "name": "com.siroshton.masaya.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:824f605db868bc247ae30c0d0ba7d28d",
+        "GUID:8c4dd21966739024fbd72155091d199e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
