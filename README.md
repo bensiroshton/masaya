@@ -6,6 +6,8 @@ Development is currently on hold while I focus on my new game project, *Knight D
 
 This repo reflects my ongoing journey of experimenting, learning, and enjoying the creative process in this space.  
 
+Try the game here: [releases](releases/tag/release).
+
 ### What is it?
 
 # Masaya
